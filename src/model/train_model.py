@@ -31,16 +31,16 @@ def split_train_val_test_data(imgs, labels):
     # Split the dataset, 60 for training 40 for testing
     train_size = int(X.shape[0] * 0.6)
     X_train, X_val = X[:train_size], X[train_size:]
-    Y_train, Y_val = y[:train_size], y[train_size:]
+    y_train, y_val = y[:train_size], y[train_size:]
 
     val_size = int(X_val.shape[0] * 0.5)
     X_val, X_test = X_val[:val_size], X_val[val_size:]
-    Y_val, Y_test = Y_val[:val_size], Y_val[val_size:]
+    y_val, y_test = y_val[:val_size], y_val[val_size:]
 
-    return X_train, Y_train, X_val, Y_val, X_test, Y_test
+    return X_train, y_train, X_val, y_val, X_test, y_test
 
 
-X_train, Y_train, X_val, Y_val, X_test, Y_test = split_train_val_test_data(
+X_train, y_train, X_val, y_val, X_test, y_test = split_train_val_test_data(
     imgs, labels)
 
 
@@ -87,10 +87,10 @@ model = build_model(input_shape=(64, 64, 3), output_size=43)
 epochs = 10
 batch_size = 16
 
-model.fit(X_train, Y_train, epochs=epochs, batch_size=batch_size,
-          validation_data=(X_val, Y_val))
+model.fit(X_train, y_train, epochs=epochs, batch_size=batch_size,
+          validation_data=(X_val, y_val))
 
 model.save("traffic_sign_model.h5")
 
 # Test with new data
-print(model.evaluate(X_test, Y_test))
+print(model.evaluate(X_test, y_test))

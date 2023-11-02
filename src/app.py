@@ -1,6 +1,5 @@
 import keras
 import cv2
-from imageio.v2 import imread
 import os
 import numpy as np
 

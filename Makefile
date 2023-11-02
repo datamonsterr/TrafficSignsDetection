@@ -5,4 +5,4 @@ dependency:
 test:
 	python src/test.py
 create_data:
-	python make_dataset.py
+	python src/data/make_dataset.py
