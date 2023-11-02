@@ -1,12 +1,6 @@
-# MiAi_Traffic_Sign_Classify
-Use CNN to classify traffic sign
-<br>
-Article link: https://www.miai.vn/2020/08/03/phan-loai-bien-bao-giao-thong-bang-deep-learning-cnn/
+# Datasets:
+- 43 folders represent 43 classes.
+- Each folder contains multiple images (ppm format) of a traffic sign
+- Each folder contains a csv file which has information of each images in the same directory
 
-
-#MìAI <br>
-Fanpage: http://facebook.com/miaiblog<br>
-Group trao đổi, chia sẻ: https://www.facebook.com/groups/miaigroup<br>
-Website: http://miai.vn<br>
-Youtube: http://bit.ly/miaiyoutube<br>
-
+# Get my datasets:
