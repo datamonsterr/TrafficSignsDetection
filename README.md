@@ -12,5 +12,6 @@
 # Set up:
 
 - Run `pip install -r setup.txt` on your shell
-- Download [dataset](https://bit.ly/dataset_GTSRB) 
-- Run `make train` to generate the model of AI
+- Download [dataset](https://bit.ly/traffic-signs-recognizer-dataset) 
+- Extract the dataset into `./dataset` 
+- Run the notebook

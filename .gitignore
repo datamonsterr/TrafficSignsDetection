@@ -1,3 +1,4 @@
 dataset
-traffic_sign_model.h5
-py_cache
+traffic_sign_model*.h5
+/src/**/__pycache__
+**/playground.py
